@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_metal.mk
+    $(LOCAL_DIR)/device_metal.mk

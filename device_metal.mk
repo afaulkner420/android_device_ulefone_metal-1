@@ -2,6 +2,9 @@ LOCAL_PATH := device/ulefone/metal
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# Fragments include
+include $(DEVICE_PATH)/product/*.mk
+
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal xhdpi xxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
@@ -64,7 +67,20 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 # Common stuff
-$(call inherit-product, vendor/mad/config/common.mk)
+#$(call inherit-product, vendor/mad/config/common.mk)
 
 # Vendor
 $(call inherit-product, vendor/ulefone/metal/metal-vendor.mk)
+
+# Mtk symbols & shim
+PRODUCT_PACKAGES += \
+    libshim_agps \
+    libshim_asc \
+    libshim_gui \
+    libshim_snd \
+    libshim_ui \
+    libshim_xlog
+
+# GPS force mode
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.force.gps.mode=gnss

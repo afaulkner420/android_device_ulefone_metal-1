@@ -1,0 +1,233 @@
+emdlogger.te:# Policy File of /system/bin/emdlogger[x] Executable File 
+ged_srv.te:# Policy File of /system/bin/ged_srv Executable File 
+poad.te:# Policy File of /system/binpoad Executable File 
+bmm056d.te:# Policy File of /system/bin/bmm056d Executable File 
+akmd8963.te:# Policy File of /system/binakmd8963 Executable File 
+ccci_mdinit.te:# Policy File of /system/binccci_mdinit Executable File
+volte_stack.te:# Policy File of /system/bin/volte_stack Executable File 
+factory.te:# Policy File of /system/binfactory Executable File 
+nvram_daemon.te:# Policy File of /system/binnvram_daemon Executable File 
+cameraserver.te:#allow cameraserver default_prop:property_service { set };	** need to change system/sepolicy, later **
+md_monitor.te:# Policy File of /system/bin/md_monitor Executable File
+msensord.te:# Policy File of /system/bin/msensord Executable File 
+epdg_wod.te:# Policy File of /system/bin/epdg_wod Executable File 
+launchpppoe.te:# Policy File of /system/bin/launchpppoe Executable File 
+tune2fs.te:# Policy File of /system/bin/tune2fs Executable File
+geomagneticd.te:# Policy File of /system/bingeomagneticd Executable File 
+ist8303.te:# Policy File of /system/bin/istd8303 Executable File
+hotknot_native.te:# Policy File of /system/bin/hotknot_native_service Executable File
+mtk_agpsd.te:# Policy File of /system/binmtk_agpsd Executable File 
+akmd09911.te:# Policy File of /system/binakmd09911 Executable File 
+boot_logo_updater.te:# Policy File of /system/binboot_logo_updater Executable File 
+mtk_6620_launcher.te:# Policy File of /system/binmtk_6620_launcher Executable File 
+cmddumper.te:# Policy File of /system/bin/cmddumper Executable File 
+MtkCodecService.te:# Policy File of /system/bin/MtkCodecService Executable File 
+memsicd.te:# Policy File of /system/binmemsicd Executable File 
+mmp.te:# Policy File of /system/binmmp Executable File 
+aee_core_forwarder.te:# Policy File of /system/binaee_core_forwarder Executable File 
+emmc_rw_debug.te:# Policy File of /system/bin/emmc_rw_debug Executable File
+dhcp6c.te:# Policy File of /system/bindhcp6c Executable File 
+terservice.te:# Policy File of /system/binterservice Executable File 
+ipo_swap.te:# Policy File of /system/binipod Executable File 
+br_app_data_service.te:# Policy File of /system/br_app_data_service Executable File 
+guiext-server.te:# Policy File of /system/bin/guiext-server Executable File
+file_contexts:/system/app/mcRegistry(/.*)? u:object_r:mobicore_data_file:s0
+file_contexts:/system/bin/6620_launcher u:object_r:mtk_6620_launcher_exec:s0
+file_contexts:/system/bin/stp_dump3 u:object_r:stp_dump3_exec:s0
+file_contexts:/system/bin/aal u:object_r:aal_exec:s0
+file_contexts:/system/bin/aee_core_forwarder u:object_r:aee_core_forwarder_exec:s0
+file_contexts:/system/bin/akmd09911 u:object_r:akmd09911_exec:s0
+file_contexts:/system/bin/akmd09912 u:object_r:akmd09912_exec:s0
+file_contexts:/system/bin/akmd8963 u:object_r:akmd8963_exec:s0
+file_contexts:/system/bin/akmd8975 u:object_r:akmd8975_exec:s0
+file_contexts:/system/bin/ami304d u:object_r:ami304d_exec:s0
+file_contexts:/system/bin/atcid u:object_r:atcid_exec:s0
+file_contexts:/system/bin/atci_service u:object_r:atci_service_exec:s0
+file_contexts:/system/bin/audiocmdservice_atci u:object_r:audiocmdservice_atci_exec:s0
+file_contexts:/system/bin/autokd u:object_r:autokd_exec:s0
+file_contexts:/system/bin/batterywarning u:object_r:batterywarning_exec:s0
+file_contexts:/system/bin/bmm050d u:object_r:bmm050d_exec:s0
+file_contexts:/system/bin/bmm056d u:object_r:bmm056d_exec:s0
+file_contexts:/system/bin/boot_logo_updater u:object_r:boot_logo_updater_exec:s0
+file_contexts:/system/bin/br_app_data_service u:object_r:br_app_data_service_exec:s0
+file_contexts:/system/bin/ccci_fsd u:object_r:ccci_fsd_exec:s0
+file_contexts:/system/bin/ccci_mdinit u:object_r:ccci_mdinit_exec:s0
+file_contexts:/system/bin/ccci_rpcd u:object_r:ccci_rpcd_exec:s0
+file_contexts:/system/bin/custom_sn u:object_r:sn_exec:s0
+file_contexts:/system/bin/dhcp6c u:object_r:dhcp6c_exec:s0
+file_contexts:/system/bin/dm_agent_binder u:object_r:dm_agent_binder_exec:s0
+file_contexts:/system/bin/dmlog u:object_r:dmlog_exec:s0
+file_contexts:/system/bin/dongled u:object_r:usbdongled_exec:s0
+file_contexts:/system/bin/eemcs_fsd u:object_r:eemcs_fsd_exec:s0
+file_contexts:/system/bin/eemcs_mdinit u:object_r:eemcs_mdinit_exec:s0
+file_contexts:/system/bin/emdlogger[0-9]+ u:object_r:emdlogger_exec:s0
+file_contexts:/system/bin/em_svr u:object_r:em_svr_exec:s0
+file_contexts:/system/bin/factory u:object_r:factory_exec:s0
+file_contexts:/system/bin/flashlessd u:object_r:flashlessd_exec:s0
+file_contexts:/system/bin/fuelgauged u:object_r:fuelgauged_exec:s0
+file_contexts:/system/bin/ged_srv u:object_r:ged_srv_exec:s0
+file_contexts:/system/bin/gas_srv    u:object_r:gas_srv_exec:s0
+file_contexts:/system/bin/kpoc_charger u:object_r:kpoc_charger_exec:s0
+file_contexts:/system/bin/geomagneticd u:object_r:geomagneticd_exec:s0
+file_contexts:/system/bin/GoogleOtaBinder u:object_r:GoogleOtaBinder_exec:s0
+file_contexts:#/system/bin/gsm0710muxdmd2 u:object_r:gsm0710muxdmd2_exec:s0
+file_contexts:/system/bin/gsm0710muxd u:object_r:gsm0710muxd_exec:s0
+file_contexts:/system/bin/guiext-server u:object_r:guiext-server_exec:s0
+file_contexts:/system/bin/icusbd u:object_r:icusbd_exec:s0
+file_contexts:/system/bin/init.gprs-pppd u:object_r:zpppd_gprs_exec:s0
+file_contexts:/system/bin/ipod u:object_r:ipod_exec:s0
+file_contexts:/system/bin/ipo_swap u:object_r:ipo_swap_exec:s0
+file_contexts:/system/bin/launchpppoe u:object_r:launchpppoe_exec:s0
+file_contexts:/system/bin/matv u:object_r:matv_exec:s0
+file_contexts:/system/bin/mc6420d u:object_r:mc6420d_exec:s0
+file_contexts:/system/bin/mcDriverDaemon u:object_r:mobicore_exec:s0
+file_contexts:/system/bin/mdlogger u:object_r:mdlogger_exec:s0
+file_contexts:/system/bin/memsicd3416x u:object_r:memsicd3416x_exec:s0
+file_contexts:/system/bin/memsicd u:object_r:memsicd_exec:s0
+file_contexts:/system/bin/meta_tst u:object_r:meta_tst_exec:s0
+file_contexts:/system/bin/mmc_ffu u:object_r:mmc_ffu_exec:s0
+file_contexts:/system/bin/emmc_rw_debug u:object_r:emmc_rw_debug_exec:s0
+file_contexts:/system/bin/mvg_app u:object_r:mvg_app_exec:s0
+file_contexts:/system/bin/mmp u:object_r:mmp_exec:s0
+file_contexts:/system/bin/mobile_log_d u:object_r:mobile_log_d_exec:s0
+file_contexts:/system/bin/mpud6050 u:object_r:mpud6050_exec:s0
+file_contexts:/system/bin/msensord u:object_r:msensord_exec:s0
+file_contexts:/system/bin/mtk_agpsd u:object_r:mtk_agpsd_exec:s0
+file_contexts:/system/bin/MtkCodecService u:object_r:MtkCodecService_exec:s0
+file_contexts:#/system/bin/mtkrildmd2 u:object_r:mtkrildmd2_exec:s0
+file_contexts:/system/bin/mtkrild u:object_r:mtkrild_exec:s0
+file_contexts:/system/bin/muxreport u:object_r:muxreport_exec:s0
+file_contexts:/system/bin/netdiag u:object_r:netdiag_exec:s0
+file_contexts:/system/bin/nvram_agent_binder u:object_r:nvram_agent_binder_exec:s0
+file_contexts:/system/bin/nvram_daemon u:object_r:nvram_daemon_exec:s0
+file_contexts:/system/bin/nvram_proximity u:object_r:nvram_daemon_exec:s0
+file_contexts:/system/bin/orientationd u:object_r:orientationd_exec:s0
+file_contexts:/system/bin/permission_check u:object_r:permission_check_exec:s0
+file_contexts:/system/bin/poad u:object_r:poad_exec:s0
+file_contexts:/system/bin/ppl_agent u:object_r:ppl_agent_exec:s0
+file_contexts:/system/bin/pppd_dt u:object_r:pppd_dt_exec:s0
+file_contexts:/system/bin/pppd_via u:object_r:pppd_via_exec:s0
+file_contexts:/system/bin/pq u:object_r:pq_exec:s0
+file_contexts:/system/bin/program_binary_service u:object_r:program_binary_exec:s0
+file_contexts:/system/bin/resize2fs  --  u:object_r:resize_exec:s0
+file_contexts:/system/bin/resize_ext4  --  u:object_r:resize_exec:s0
+file_contexts:/system/bin/resmon u:object_r:resmon_exec:s0
+file_contexts:/system/bin/rild_dongle u:object_r:ril-3gddaemon_exec:s0
+file_contexts:/system/bin/s62xd u:object_r:s62xd_exec:s0
+file_contexts:/system/bin/slpd u:object_r:slpd_exec:s0
+file_contexts:/system/bin/sn u:object_r:sn_exec:s0
+file_contexts:/system/bin/statusd u:object_r:statusd_exec:s0
+file_contexts:/system/bin/terservice u:object_r:terservice_exec:s0
+file_contexts:/system/bin/thermald u:object_r:thermald_exec:s0
+file_contexts:/system/bin/thermal_manager u:object_r:thermal_manager_exec:s0
+file_contexts:/system/bin/thermalloadalgod u:object_r:thermalloadalgod_exec:s0  
+file_contexts:/system/bin/thermal u:object_r:thermal_exec:s0
+file_contexts:/system/bin/tiny_mkswap u:object_r:tiny_mkswap_exec:s0
+file_contexts:/system/bin/tiny_swapon u:object_r:tiny_swapon_exec:s0
+file_contexts:#/system/bin/tune2fs u:object_r:tune2fs_exec:s0
+file_contexts:/system/bin/viarild u:object_r:viarild_exec:s0
+file_contexts:/system/bin/volte_imcb u:object_r:volte_imcb_exec:s0
+file_contexts:/system/bin/volte_stack u:object_r:volte_stack_exec:s0
+file_contexts:/system/bin/volte_ua u:object_r:volte_ua_exec:s0
+file_contexts:/system/bin/wfca u:object_r:wfca_exec:s0
+file_contexts:/system/bin/mtkmal u:object_r:mtkmal_exec:s0
+file_contexts:/system/bin/wifi2agps u:object_r:wifi2agps_exec:s0
+file_contexts:/system/bin/wmt_loader u:object_r:wmt_loader_exec:s0
+file_contexts:/system/bin/xlog u:object_r:xlog_exec:s0
+file_contexts:/system/bin/sbchk u:object_r:sbchk_exec:s0
+file_contexts:/system/bin/OperaMaxSystem u:object_r:tunman_exec:s0
+file_contexts:/system/etc/sensor(/.*)?	u:object_r:system_sensor_data_file:s0
+file_contexts:/system/vendor/bin/pvrsrvctl u:object_r:pvrsrvctl_exec:s0
+file_contexts:/system/xbin/BGW u:object_r:BGW_exec:s0
+file_contexts:/system/xbin/mnld u:object_r:mnld_exec:s0
+file_contexts:/system/bin/md_ctrl u:object_r:md_ctrl_exec:s0
+file_contexts:/system/bin/cmddumper u:object_r:cmddumper_exec:s0
+file_contexts:/system/bin/epdg_wod u:object_r:epdg_wod_exec:s0
+file_contexts:/system/bin/ipsec u:object_r:ipsec_exec:s0
+file_contexts:/system/bin/charon u:object_r:charon_exec:s0
+file_contexts:/system/bin/starter u:object_r:starter_exec:s0
+file_contexts:/system/bin/stroke u:object_r:stroke_exec:s0
+file_contexts:/system/bin/istd8303 u:object_r:istd8303_exec:s0
+file_contexts:/system/bin/spm_loader u:object_r:spm_loader_exec:s0
+file_contexts:/system/bin/vtservice u:object_r:vtservice_exec:s0
+file_contexts:/system/bin/hotknot_native_service u:object_r:hotknot_native_exec:s0
+file_contexts:/system/bin/teei_daemon u:object_r:teei_daemon_exec:s0
+file_contexts:/system/bin/init_thh u:object_r:init_thh_service_exec:s0
+file_contexts:/system/bin/md_monitor u:object_r:md_monitor_exec:s0
+file_contexts:/data/system/users/[0-9]+/smartbook_wallpaper	u:object_r:wallpaper_file:s0
+fota1.te:# Policy File of /system/bin/fota1 Executable File 
+mvg_app.te:# Policy File of /system/bin/mvg_app Executable File
+akmd09912.te:# Policy File of /system/binakmd09912 Executable File 
+s62xd.te:# Policy File of /system/bins62xd Executable File 
+ipod.te:# Policy File of /system/binipod Executable File
+mmc_ffu.te:# Policy File of /system/bin/mmc_ffu Executable File 
+eemcs_mdinit.te:# Policy File of /system/bineemcs_mdinit Executable File
+thermalloadalgod.te:# Policy File of /system/bin/thermalloadalgod_exec Executable File 
+orientationd.te:# Policy File of /system/binorientationd Executable File 
+ccci_fsd.te:# Policy File of /system/binccci_fsd Executable File 
+ami304d.te:# Policy File of /system/binami304d Executable File 
+ppl_agent.te:# Policy File of /system/bin/ppl_agent Executable File 
+ccci_rpcd.te:# Policy File of /system/binccci_fsd Executable File 
+tiny_swapon.te:# Policy File of /system/bin/tiny_swapon Executable File 
+kpoc_charger.te:# Policy File of /system/bin/kpoc_charger Executable File 
+tiny_mkswap.te:# Policy File of /system/bin/tiny_mkswap Executable File 
+muxreport.te:# Policy File of /system/binmuxreport Executable File
+akmd8975.te:# Policy File of /system/binakmd8975 Executable File 
+nvram_agent_binder.te:# Policy File of /system/binnvram_agent_binder Executable File 
+program_binary.te:# Policy File of /system/bin/program_binary_service Executable File
+st480.te:# Policy File of /system/binakmd09911 Executable File 
+audiocmdservice_atci.te:# Policy File of /system/binaudiocmdservice_atci Executable File 
+md_ctrl.te:# Policy File of /system/bin/md_ctrl Executable File 
+BGW.te:# Policy File of /system/xbin/BGW Executable File 
+flashlessd.te:# Policy File of /system/bin/flashlessd Executable File 
+thermald.te:# Policy File of /system/binthermald Executable File 
+batterywarning.te:# Policy File of /system/binbatterywarning Executable File 
+pvrsrvctl.te:# Policy File of /system/bin/pvrsrvctl Executable File 
+bmm050d.te:# Policy File of /system/binbmm050d Executable File 
+gsm0710muxd.te:# Policy File of /system/bingsm0710muxd Executable File 
+sbchk.te:# Policy File of /system/bin/sbchk Executable File 
+resmon.te:# Policy File of /system/binresmon Executable File
+GoogleOtaBinder.te:# Policy File of /system/binGoogleOtaBinder Executable File 
+mobile_log_d.te:# Policy File of /system/binmobile_log_d Executable File 
+stp_dump3.te:# Policy File of /system/binstp_dump3 Executable File
+eemcs_fsd.te:# Policy File of /system/bineemcs_fsd Executable File 
+wfca.te:# Policy File of /system/bin/wfca Executable File 
+mtkrild.te:# Policy File of /system/bin/mtkrild Executable File
+dm_agent_binder.te:# Policy File of /system/bin/dm_agent_binder Executable File 
+wmt_loader.te:# Policy File of /system/binwmt_loader Executable File 
+volte_imcb.te:# Policy File of /system/bin/volte_imcb Executable File 
+meta_tst.te:# Policy File of /system/bin/meta_tst Executable File 
+ipsec.te:# Policy File of /system/bin/ipsec Executable File 
+vtservice.te:# Policy File of /system/binvtservice Executable File
+sn.te:# Policy File of /system/bin/sn Executable File 
+dmlog.te:# Policy File of /system/bin/dmlog Executable File 
+matv.te:# Policy File of /system/binmatv Executable File 
+mdlogger.te:# Policy File of /system/binmdlogger Executable File 
+mdlogger.te:# Package: system/bin/mdlogger
+volte_ua.te:# Policy File of /system/bin/volte_ua Executable File 
+resize.te:# Policy File of /system/bin/resize_xxx Executable File
+thermal.te:# Policy File of /system/binthermal Executable File 
+memsicd3416x.te:# Policy File of /system/binmemsicd3416x Executable File 
+icusbd.te:# Policy File of /system/binicusbd Executable File 
+statusd.te:# Policy File of /system/bin/statusd Executable File 
+autokd.te:# Policy File of /system/bin/autokd Executable File 
+xlog.te:# Policy File of /system/binxlog Executable File 
+pppd_dt.te:# Policy File of /system/binpppd_dt Executable File 
+mc6420d.te:# Policy File of /system/binmc6420d Executable File 
+system_server.te:# Purpose : for /system/app/mcRegistry and /proc/secmem (TEE enable)
+thermal_manager.te:# Policy File of /system/binthermal_manager Executable File 
+wifi2agps.te:# Policy File of /system/bin/wifi2agps Executable File 
+pppd_via.te:# Policy File of /system/bin/pppd_via Executable File 
+em_svr.te:# Policy File of /system/binem_svr Executable File 
+spm_loader.te:# Policy File of /system/bin/spm_loader Executable File 
+permission_check.te:# Policy File of /system/binpermission_check Executable File 
+aal.te:# Policy File of /system/binaal Executable File 
+viarild.te:# Policy File of /system/bin/viarild Executable File 
+atcid.te:# Policy File of /system/binatcid Executable File 
+netdiag.te:# Policy File of /system/binnetdiag Executable File 
+netdiag.te:#/system/bin/aee
+mtkmal.te:# Policy File of /system/bin/mtkmal Executable File 
+atci_service.te:# Policy File of /system/binatci_service Executable File 
+gas_srv.te:# Policy File of /system/bin/gas_srv Executable File
+mpud6050.te:# Policy File of /system/bin/mpud6050 Executable File 
+pq.te:# Policy File of /system/binpq Executable File

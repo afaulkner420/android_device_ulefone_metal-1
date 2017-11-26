@@ -4,13 +4,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from hardware-specific part of the product configuration
-$(call inherit-product, device/ulefone/metal/device.mk)
+$(call inherit-product, device/ulefone/metal/device_metal.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := Metal
 
 PRODUCT_DEVICE := metal
-PRODUCT_NAME := full_metal
+PRODUCT_NAME := lineage_metal
 PRODUCT_BRAND := Ulefone
 PRODUCT_MODEL := Metal
 PRODUCT_MANUFACTURER := Ulefone
