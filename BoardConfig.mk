@@ -4,7 +4,7 @@ LOCAL_PATH := device/ulefone/metal
 #include vendor/mad/config/board.mk
 
 # Fragments include
-include $(DEVICE_PATH)/board/*.mk
+include $(LOCAL_PATH)/board/*.mk
 
 # Includes
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include

@@ -3,7 +3,7 @@ LOCAL_PATH := device/ulefone/metal
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Fragments include
-include $(DEVICE_PATH)/product/*.mk
+include $(LOCAL_PATH)/product/*.mk
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal xhdpi xxhdpi
