@@ -1,5 +1,8 @@
 LOCAL_PATH := device/ulefone/metal
 
+$(call inherit-product-if-exists, vendor/ulefone/metal/metal-vendor.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Fragments include

@@ -103,3 +103,15 @@ TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
 
 # SELinux
 BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/sepolicy
+
+##### Tests Start #####
+#Dex-preopt
+DISABLE_DEXPREOPT=true
+WITH_DEXPREOPT=false
+
+# Allocator Service
+SF_START_GRAPHICS_ALLOCATOR_SERVICE := true
+
+#Treble
+PRODUCT_FULL_TREBLE:= false
+##### Tests End #####
